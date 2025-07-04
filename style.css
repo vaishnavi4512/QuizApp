@@ -1,0 +1,93 @@
+/* Reset default margin and padding, set font, and apply border-box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Set background color for the page */
+body {
+  background: white;
+}
+
+/* Main container styling */
+.app {
+  background: black;                 /* Dark background for the app container */
+  width: 90%;                        /* Responsive width */
+  max-width: 600px;                  /* Limit maximum width */
+  margin: 100px auto 0;              /* Center the app horizontally with top margin */
+  border-radius: 10px;               /* Rounded corners */
+  padding: 30px;                     /* Inner padding */
+}
+
+/* Main heading styling */
+.app h1 {
+  font-size: 25px;                   /* Font size */
+  color: rgba(226, 158, 12, 0.83);   /* Golden yellow color */
+  font-weight: 600;                  /* Bold text */
+  border-bottom: 1px solid #f7f7f7;  /* Bottom border */
+  padding-bottom: 30px;              /* Space below the heading */
+}
+
+/* Quiz section spacing */
+.quiz {
+  padding: 20px 0;
+}
+
+/* Question text styling */
+.quiz h2 {
+  font-size: 18px;                   /* Smaller font size than heading */
+  color: rgba(226, 158, 12, 0.83);   /* Same golden color as heading */
+  font-weight: 600;
+}
+
+/* Common button styling (used for answers) */
+.btn {
+  background: #faf3f3;               /* Light background color */
+  color: black;
+  font-weight: 500;
+  width: 100%;                       /* Full width */
+  border: 1px solid #222;            /* Dark border */
+  padding: 10px;                     /* Inner padding */
+  margin: 10px 0;                    /* Vertical spacing */
+  text-align: left;                  /* Align text to the left */
+  border-radius: 4px;                /* Rounded corners */
+  cursor: pointer;                   /* Pointer cursor on hover */
+  transition: all 0.3s;              /* Smooth transition on hover */
+}
+
+/* Hover effect for active (non-disabled) buttons */
+.btn:hover:not([disabled]) {
+  background: #222;                  /* Dark background on hover */
+  color: black;
+}
+
+/* Cursor style for disabled buttons */
+.btn:disabled {
+  cursor: no-drop;                   /* No-drop cursor indicates disabled state */
+}
+
+/* "Next" button styling */
+#next-btn {
+  background: rgba(226, 158, 12, 0.83); /* Same golden color */
+  color: #fff;                         /* White text */
+  font-weight: 500;
+  width: 150px;                        /* Fixed width */
+  border: 0;                           /* No border */
+  padding: 10px;                       /* Inner padding */
+  margin: 20px auto 0;                 /* Center horizontally with top margin */
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;                       /* Hidden by default */
+}
+
+/* Styling for correct answer */
+.correct {
+  background: #9aeabc;                /* Light green background */
+}
+
+/* Styling for incorrect answer */
+.incorrect {
+  background: #ff9393;                /* Light red background */
+}
